@@ -2,8 +2,9 @@
 document.getElementById('triangle-calc').addEventListener('click', function () {
     const getValueOne = getInputFieldValueById('triangle-b');
     const getValueTwo = getInputFieldValueById('triangle-h');
-    if(getValueOne < 0 || getValueTwo < 0){
-        alert("Please give me a positive number!!");
+    
+    if(getValueOne < 0 || getValueTwo < 0 || getValueOne === '' || getValueTwo === '' || isNaN(getValueOne) || isNaN(getValueTwo)){
+        alert("Please give me two positive number!!");
         return;
     }
     const areaOfTriangle = 0.5 * getValueOne * getValueTwo;
@@ -14,8 +15,8 @@ document.getElementById('triangle-calc').addEventListener('click', function () {
 document.getElementById('rectangle-calc').addEventListener('click', function () {
     const getValueOne = getInputFieldValueById('rectangle-w');
     const getValueTwo = getInputFieldValueById('rectangle-l');
-    if(getValueOne < 0 || getValueTwo < 0 ){
-        alert("Please give me a positive number!!");
+    if(getValueOne < 0 || getValueTwo < 0 || getValueOne === '' || getValueTwo === '' || isNaN(getValueOne) || isNaN(getValueTwo)){
+        alert("Please give me two positive number!!");
         return;
     }
     const areaOfRectangle = getValueOne * getValueTwo;
