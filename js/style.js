@@ -1,4 +1,4 @@
-// function for 
+// function for Triangle area calculation
 document.getElementById('triangle-calc').addEventListener('click', function () {
     const getValueOne = getInputFieldValueById('triangle-b');
     const getValueTwo = getInputFieldValueById('triangle-h');
@@ -10,6 +10,7 @@ document.getElementById('triangle-calc').addEventListener('click', function () {
     const areaTriangle = areaOfTriangle.toFixed(2);
     setAreaInAreaField('area-output1', areaTriangle);
 });
+// Function for rectangle area calculation
 document.getElementById('rectangle-calc').addEventListener('click', function () {
     const getValueOne = getInputFieldValueById('rectangle-w');
     const getValueTwo = getInputFieldValueById('rectangle-l');
@@ -17,6 +18,7 @@ document.getElementById('rectangle-calc').addEventListener('click', function () 
     const areaRectangle = areaOfRectangle.toFixed(2);
     setAreaInAreaField('area-output2', areaRectangle);
 });
+// Function for parallelogram area calculation
 document.getElementById('parallelogram-calc').addEventListener('click', function () {
     const getValueOne = getInputFieldValueById('parallelogram-b');
     const getValueTwo = getInputFieldValueById('parallelogram-h');
@@ -24,6 +26,7 @@ document.getElementById('parallelogram-calc').addEventListener('click', function
     const areaParallelogram = areaOfParallelogram.toFixed(2);
     setAreaInAreaField('area-output3', areaParallelogram);
 });
+// Function for rhombus area calculation
 document.getElementById('rhombus-calc').addEventListener('click', function () {
     const getValueOne = getInputFieldValueById('rhombus-d1');
     const getValueTwo = getInputFieldValueById('rhombus-d2');
@@ -31,6 +34,7 @@ document.getElementById('rhombus-calc').addEventListener('click', function () {
     const areaRhombus = areaOfRhombus.toFixed(2);
     setAreaInAreaField('area-output4', areaRhombus);
 });
+// Function for pentagon area calculation
 document.getElementById('pentagon-calc').addEventListener('click', function () {
     const getValueOne = getInputFieldValueById('pentagon-p');
     const getValueTwo = getInputFieldValueById('pentagon-b');
@@ -38,6 +42,7 @@ document.getElementById('pentagon-calc').addEventListener('click', function () {
     const areaPentagon = areaOfPentagon.toFixed(2);
     setAreaInAreaField('area-output5', areaPentagon);
 });
+// Function for ellipse area calculation
 document.getElementById('ellipse-calc').addEventListener('click', function () {
     const getValueOne = getInputFieldValueById('ellipse-b');
     const getValueTwo = getInputFieldValueById('ellipse-h');
@@ -45,7 +50,7 @@ document.getElementById('ellipse-calc').addEventListener('click', function () {
     const areaEllipse = areaOfEllipse.toFixed(2);
     setAreaInAreaField('area-output6', areaEllipse);
 });
-
+// Here are the DOM of Random color change mouseover!!!!
 document.getElementById('card1').addEventListener("mouseover", function(){
     document.getElementById('card1').style.backgroundColor = randomColor();
   });

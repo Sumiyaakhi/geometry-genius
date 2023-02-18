@@ -11,6 +11,7 @@ function setAreaInAreaField(areaId , areaValue){
     const areaElement = document.getElementById(areaId);
     areaElement.innerText = areaValue;
 }
+// This function is used for random color changed
 function randomColor() {
     let color = [];
     for (let i = 0; i < 3; i++) {
