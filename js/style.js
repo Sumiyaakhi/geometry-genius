@@ -1,9 +1,9 @@
-// function
+// function for 
 document.getElementById('triangle-calc').addEventListener('click', function () {
     const getValueOne = getInputFieldValueById('triangle-b');
     const getValueTwo = getInputFieldValueById('triangle-h');
     if(getValueOne,getValueTwo < 0){
-        alert("sorry");
+        alert("Please give me a positive number!!");
         return;
     }
     const areaOfTriangle = 0.5 * getValueOne * getValueTwo;
