@@ -2,7 +2,7 @@
 document.getElementById('triangle-calc').addEventListener('click', function () {
     const getValueOne = getInputFieldValueById('triangle-b');
     const getValueTwo = getInputFieldValueById('triangle-h');
-    if(getValueOne,getValueTwo < 0){
+    if(getValueOne < 0 || getValueTwo < 0){
         alert("Please give me a positive number!!");
         return;
     }
@@ -14,6 +14,10 @@ document.getElementById('triangle-calc').addEventListener('click', function () {
 document.getElementById('rectangle-calc').addEventListener('click', function () {
     const getValueOne = getInputFieldValueById('rectangle-w');
     const getValueTwo = getInputFieldValueById('rectangle-l');
+    if(getValueOne < 0 || getValueTwo < 0 ){
+        alert("Please give me a positive number!!");
+        return;
+    }
     const areaOfRectangle = getValueOne * getValueTwo;
     const areaRectangle = areaOfRectangle.toFixed(2);
     setAreaInAreaField('area-output2', areaRectangle);
